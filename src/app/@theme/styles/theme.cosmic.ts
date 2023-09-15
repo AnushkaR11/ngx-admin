@@ -139,11 +139,6 @@ export const COSMIC_THEME = {
       areaOpacity: '1',
     },
 
-    chartjs: {
-      axisLineColor: baseThemeVariables.separator,
-      textColor: baseThemeVariables.fgText,
-    },
-
     orders: {
       tooltipBg: baseThemeVariables.bg,
       tooltipLineColor: 'rgba(0, 0, 0, 0)',
