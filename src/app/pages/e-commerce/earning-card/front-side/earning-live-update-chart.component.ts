@@ -141,11 +141,13 @@ export class EarningLiveUpdateChartComponent implements AfterViewInit, OnDestroy
   }
 
   updateChartOptions(chartData: { value: [string, number] }[]) {
-    this.echartsInstance.setOption({
-      series: [{
-        data: chartData,
-      }],
-    });
+    if(this.echartsInstance){
+      this.echartsInstance.setOption({
+        series: [{
+          data: chartData,
+        }],
+      });
+    }
   }
 
   onChartInit(ec) {
