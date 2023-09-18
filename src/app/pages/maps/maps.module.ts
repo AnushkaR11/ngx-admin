@@ -8,7 +8,7 @@ import { MapsRoutingModule, routedComponents } from './maps-routing.module';
 @NgModule({
   imports: [
     ThemeModule,
-    LeafletModule.forRoot(),
+    LeafletModule,
     MapsRoutingModule,
     NbCardModule,
   ],
