@@ -1,3 +1,4 @@
+
 /**
  * @license
  * Copyright Akveo. All Rights Reserved.
@@ -18,8 +19,9 @@ import {
   NbMenuModule,
   NbSidebarModule,
   NbToastrModule,
-  NbWindowModule,
+  NbWindowModule
 } from '@nebular/theme';
+import { NgxEchartsModule } from 'ngx-echarts';
 import { LeafletModule } from '@asymmetrik/ngx-leaflet';
 
 @NgModule({
@@ -41,6 +43,9 @@ import { LeafletModule } from '@asymmetrik/ngx-leaflet';
     CoreModule.forRoot(),
     LeafletModule,
     ThemeModule.forRoot(),
+    NgxEchartsModule.forRoot({
+      echarts: () => import('echarts')
+    })
   ],
   bootstrap: [AppComponent],
 })
