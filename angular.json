@@ -4,6 +4,15 @@
   "newProjectRoot": "projects",
   "projects": {
     "ngx-admin-demo": {
+      "i18n": {
+        "sourceLocale" : "en-US",
+        "locales": {
+          "ar-AE": {
+            "translation": "src/locale/messages.ar.xlf",
+            "baseHref": "ar-AE/"
+          }
+        }
+      },
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -11,6 +20,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "ar-AE"
+            ],
             "preserveSymlinks": true,
             "outputPath": "dist",
             "index": "src/index.html",
